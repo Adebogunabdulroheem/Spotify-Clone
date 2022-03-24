@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from 'next/image';
 import { getProviders, signIn, useSession } from "next-auth/react";
 import { useRouter } from 'next/router';
-import Loader from '../Loader';
+import Loader from '../../components/Loader';
 
 const Signin = ({ providers }) => {
     const {data: session}= useSession();
